@@ -1,3 +1,6 @@
+*{
+    text-align: center;
+}
 h1{
     color: rgb(41, 18, 122);
     text-align: center;
@@ -12,5 +15,6 @@ p{
     color: #043f25;
 }
 ol>li{
+    text-align: left;
     font-weight: 500;
 }
