@@ -1,0 +1,16 @@
+h1{
+    color: rgb(41, 18, 122);
+    text-align: center;
+}
+p{
+    color: #891313;
+    font-style: italic;
+}
+.desk{
+    font-size: 20px;
+    text-decoration: underline;
+    color: #043f25;
+}
+ol>li{
+    font-weight: 500;
+}
