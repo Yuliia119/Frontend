@@ -1,0 +1,37 @@
+body {
+    /* убираем стандартные отступы у body */
+    margin: 0px;
+  }
+  
+  main {
+    /* внутренние отступы main контейнера */
+    padding: 0px 20px;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    border: 5px solid rgb(211, 22, 8);
+    color: white;
+    /* margin: 10px; */
+    padding: 20px;
+    margin: 10px 20px;
+  }
+  
+  .red-box {
+    background-color: rgb(255, 111, 111);
+  }
+  
+  .blue-box {
+    background-color: rgb(108, 108, 253);
+    border: 5px dashed rgb(34, 11, 77);
+  }
+  
+  header {
+    height: 60px;
+    background-color: orange;
+  }
+  p > span {
+    color:  rgb(255, 111, 111);
+    text-decoration: underline;
+  }
