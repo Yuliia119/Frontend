@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;   /*размер всех контейнеров по умолчанию*/
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  ul>li {
+    padding-left: 10px;
+    list-style: none;
+  }
+  
+  ul>li::before {
+    content: '✅';
+  }
+  
+  .container {
+    background-color: rgb(157, 157, 255);
+    border: 2px solid black;
+    height: 250px;
+    /* включили flex отображение для родителя позиционируемых элементов */
+    display: flex;
+    /* в flex можно указывать промежуток между элементами (альтернатива для margin) */
+    gap: 5px;
+    /* управления позиционированием по главной оси */
+    justify-content: space-evenly;
+    /* управления позиционированием по поперечной оси */
+    align-items: center;
+    /* меняет оси позиционирования местами */
+    /* вместе с осями меняются и свойства позиционирования */
+    flex-direction: row;
+  }
+  
+  /* значения для позиционирования */
+  /* center - по центру */
+  /* space-between - равномерно распределяет пространство между */
+  /* space-evenly равномерно распределяет пространство вокруг элементов */
+  /* start / end - перемещает в начало и конец контейнера */
+  
+  .container>div {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    /* margin: 10px; */
+    background-color: rgb(215, 255, 155);
+  }
+  /* это правило сработает для всех картинок-потомков .card-container */
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .card-container > section {
+    border: 1px solid darkblue;
+    border-radius: 20px;
+    width: 250px;
+    padding: 10px 20px 30px;
+    /* задаем свойство flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  
+  .card-container img {
+    width: 100%;
+  }
