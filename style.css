@@ -1,3 +1,7 @@
+ul {
+  padding-left: 5px;
+}
+
 ul > li {
     /* убираем стилизацию элементов списка */
     list-style: none;
@@ -15,4 +19,8 @@ ul > li {
   a:hover {
     text-decoration: underline;
     color: orange;
+  }
+  
+  .homeworks > li::before {
+    content: '🔥  ';
   }
