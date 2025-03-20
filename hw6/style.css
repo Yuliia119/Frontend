@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+}
+header{
+    height: 40px;
+    width: 100%;
+    background-color: aqua;
+    top: 0;
+    position: fixed;
+.gallery{
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+}
+.character-card img {
+    margin-top: 40px;
+    height: 300px;
+    display: grid;
+    padding: 5px;
+}
