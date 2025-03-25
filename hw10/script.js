@@ -8,4 +8,12 @@ document.getElementById('task1').innerHTML = `1. Результат: ${myNumber}
 let myString = "Hello " + " world" + "!" +` 2024`;
 console.log(myString);
 document.getElementById('task2').innerHTML = `2. Результат: ${myString}`;
+// Задание 3
+let isHuman = 42 == "42";
+console.log(isHuman);
+document.getElementById('task3').innerHTML = `3. Результат: ${isHuman}`;
+// Задание 4
+let myNamber = parseInt("123smth");
+console.log(myNamber);
+document.getElementById('task4').innerHTML = `4. Результат: ${myNamber}`;
 
