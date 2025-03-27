@@ -20,14 +20,14 @@ document.getElementById('task2').innerHTML = `2. Результат: ${reversedP
 
 // Задание 3
 const fruits = []                             // создали пустой массив
-fruits.push("яблоко", "банан", "апельсин")    // добавили элементы
+fruits.push(" яблоко", " банан", "апельсин")    // добавили элементы
 const lastFruits = fruits.pop()    //удалили последний элемент и сохранили в переменную
 fruits.unshift(lastFruits)        // добавили последний элемент в начало массива
 console.log(fruits)    // выводим результат
 document.getElementById('task3').innerHTML = `3. Результат: ${fruits}`;
 
 //Задание 4
-const veggies = ["морковь","огурец","помидор"]
+const veggies = [" морковь"," огурец"," помидор"]
 const fruitsAndVeggies = [...fruits, ...veggies]
 const [first,second,third,...rest] = fruitsAndVeggies
 console.log(fruitsAndVeggies)
