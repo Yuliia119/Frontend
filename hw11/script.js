@@ -3,10 +3,12 @@ const names = ["Семен", "Иван", "Петр", "Татьяна"];
 const ages = [18, 27, 74, 34];
 const people = []
 for(let i=0; i<names.length; i++){
-    const people = names[i]+ " "  +  ages[i] +   " лет ";
-  console.log(people);
+     people.push(names[i]+ " "  +  ages[i] +   " лет ");
 }
-document.getElementById('task1').innerHTML = `1. Результат: ${people}`
+console.log(people)
+//document.getElementById('task1').innerText = `1. Результат:: ${people.reduce((acc, el) => acc+el,"" )}`
+document.getElementById('task1').innerText = "1. Результат: "+ JSON.stringify(people)  //выводим на экран
+
 // Задание 2
 const people1= [...names,...ages];
 console.log(people1.reverse())
@@ -33,4 +35,14 @@ const [first,second,third,...rest] = fruitsAndVeggies
 console.log(fruitsAndVeggies)
 document.getElementById('task4').innerHTML = `4. Результат: ${fruitsAndVeggies}`
 
-
+// выводим Результат 1 на экран в столбик
+const ul= document.getElementById("list")
+//console.log(ul);
+people.push("Юля")
+people.map(el => {
+  const li= document.createElement("li")
+  li.innerText= el
+  console.log(li)
+  ul.append(li)
+  //console.log(el);
+})
