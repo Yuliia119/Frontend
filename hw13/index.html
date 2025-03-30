@@ -3,10 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
     <title>Homework 13</title>
 </head>
 <body>
     <h1>Homework 13: DOM practice</h1>
+    <h2 class="todo">ToDo list:</h2>
+        <div class="content">
+          <!-- форма состоит:  -->
+          <!-- из input - интерактивных элементов для ввода данных  -->
+          <!-- кнопки подтверждения отправки данных с type submit-->
+          <!-- у формы должна быть id чтобы мы могли работать с ней в JS -->
+          <form id="form-todo">
+            <input type="text" placeholder="Название книги" name="book" required>
+            <input type="text" placeholder="Имя автора" name="author" required>
+            <button class="btn btn-todo" type="submit">Поиск</button>
+            <button class="btn btn-todo" type="submit">Очистить список</button>
+          </form>
+          <ul id="list-todo" class="list-todo"></ul>
+          
+        </div>
 </body>
 </html>
