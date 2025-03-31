@@ -3,8 +3,10 @@ const form = document.getElementById("form-todo");
 const ul = document.getElementById("list-todo");
 
 // создаем очистку самого списка
-const clearButton = document.querySelectorAll("btn-todo:last-of-type");
-clearButton.addEventListener("click", clearList);
+const clearBtn = document.getElementById("clear-list");
+clearBtn.addEventListener("click", () => {
+  ul.innerHTML = "";
+});
 
 // * 2. создали массив под список задач
 const taskList = [

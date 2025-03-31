@@ -31,7 +31,25 @@
     cursor: pointer;
   }
   .btn-todo:hover {
-    background-color: rgb(251, 102, 88);
+    background-color: darkred;
+  }
+
+  .btn-clear{
+    background-color: rgb(233, 71, 56);
+    color: white;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 3px;
+  }
+
+  .btn-clear:hover{
+    background-color: darkred;
   }
   
   li {
