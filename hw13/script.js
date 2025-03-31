@@ -2,14 +2,6 @@
 const form = document.getElementById("form-todo");
 const ul = document.getElementById("list-todo");
 
-// создаем функцию очистки элементов списка
-function clearList() {
-  // пока у ul есть дочерние элементы удаляй первый элемент
-  while (ul.hasChildNodes()) {
-    ul.firstChild.remove();
-  }
-}
-
 // создаем очистку самого списка
 const clearButton = document.querySelectorAll("btn-todo:last-of-type");
 clearButton.addEventListener("click", clearList);
@@ -29,6 +21,14 @@ const taskList = [
     author: "Пауло Коэльо"
   }
 ];
+
+// создаем функцию очистки элементов списка
+function clearList() {
+    // пока у ul есть дочерние элементы удаляй первый элемент
+    while (ul.hasChildNodes()) {
+      ul.firstChild.remove();
+   }
+  }
 
 // создаем функцию изменения стилей для элементов списка
 const changeStatus = (event) => {
