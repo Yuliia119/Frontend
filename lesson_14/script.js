@@ -1,7 +1,7 @@
 const form = document.getElementById("form");
 const gridContainer = document.getElementById("grid-container");
-//console.log(form, div);
-function clearList() {
+
+function clearList() {     //функция очистки
     while (gridContainer.hasChildNodes()) {
       gridContainer.firstChild.remove();
     }
@@ -61,13 +61,13 @@ function createList() {
   createList()
 
 //Добавление нового фильма
-form.addEventListener("submit", function (event){
+form.addEventListener("submit", (event) =>{
     event.preventDefault();
     const newFilm ={
-        film:form.film.value.trim(),
-        author:form.author.value.trim(),
-        year:form.year.value.trim(),
-        foto:form.foto.value.trim()
+        film: event.target.film.value,
+        author: event.target.author.value,
+        year: event.target.year.value,
+        foto: event.target.foto.value
     }
 
     const check = filmList.find((el) => el.film === newFilm.film && el.author === newFilm.author);
