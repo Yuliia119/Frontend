@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    font-family: "Macondo Swash Caps", cursive;
+    background-color: rgb(37, 76, 104);
+    color: white;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input::placeholder {
+    color: white;
+  }
+  
+  input:focus {
+    outline: 2px solid #FCDF3A;
+    color: #FCDF3A;
+  }
+
+  #container-gender {
+    margin-top: 20px;
+  }
