@@ -3,10 +3,10 @@ const gridContainer = document.getElementById('grid-container')
 const loader = document.querySelector('.loader')
 const btnReset = document.querySelector('#btn-reset')
 
-async function getProducts(limit=1) {
+async function getProducts() {
   // мы пробуем обработать запрос в блоке try и если получим ошибку то перейдем в блок catch
   try {
-    const res = await fetch('https://dummyjson.com/products?limit='+ limit)
+    const res = await fetch('https://fakestoreapi.com/products')
     // проверяем поле ok у значений 'сырых' данных, которые получили
     if (!res.ok) throw new Error (`status :${res.status} ${res.statusText || ''}`)
     const data = await res.json()
