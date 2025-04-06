@@ -4,7 +4,7 @@ const loader = document.querySelector(".loader");
 const form = document.getElementById("product-form");
 const input = document.getElementById("limit");
 
-async function getProducts(limit = 1) {
+async function getProducts(limit = 20) {
   gridContainer.innerHTML = ""; // очистка контейнера
   // мы пробуем обработать запрос в блоке try и если получим ошибку то перейдем в блок catch
   try {

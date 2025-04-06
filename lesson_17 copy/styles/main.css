@@ -93,18 +93,50 @@
   /* отрицательный z-index спрячет под другие элементы если они есть при наложении */
   /* z-index: -3; */
   
+ form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px; 
+  }
+
+  form > input {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  
+  form > button {
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: #858731;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  
+  button:hover {
+    background-color: #e3655b;
+  } 
+
   main > button {
     background-color: #858731;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     margin-bottom: 20px;
+    padding: 5px 10px;
     cursor: pointer;
   }
   
   main > button:hover {
-    background-color: #abae5e;
+    background-color: #e3655b;
   }
   
   .nav-mobile{

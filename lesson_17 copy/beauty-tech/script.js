@@ -1,5 +1,7 @@
-// ! обработка запроса в async /await с try /catch
+
 const gridContainer = document.getElementById('grid-container')
+const form = document.getElementById("form-products")
+const input = document.getElementById("amount")
 const loader = document.querySelector('.loader')
 const btnReset = document.querySelector('#btn-reset')
 const burger = document.getElementById ("burger")
@@ -7,7 +9,23 @@ const menu = document.getElementById("menu")
 
 burger.addEventListener("click", ()=>{
 menu.classList.toggle("hide")
-})
+}); 
+
+form.addEventListener("submit", (e) =>{
+  e.preventDefault()
+  
+  const amount = parseInt(input.value)
+  if(isNaN(amount)||amount<1||amount>30){
+    alert ("Please enter a number between 1 and 30")
+    return
+  }
+  loader.classList.remove("hide")
+  gridContainer.classList.add("hide")
+  setTimeout( ()=>{
+    getProducts(amount)
+  }, 1000);
+});
+
 async function getProducts(limit=30) {
   gridContainer.innerHTML="";
   // мы пробуем обработать запрос в блоке try и если получим ошибку то перейдем в блок catch
