@@ -1,26 +1,41 @@
-ul {
-  padding-left: 5px;
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2 {
+  text-align: center;
 }
 
-ul > li {
-    /* убираем стилизацию элементов списка */
-    list-style: none;
-  }
-  
-  li::before {
-    content: '⚡';
-  }
-  
-  a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-    color: orange;
-  }
-  
-  .homeworks > li::before {
-    content: '🔥  ';
-  }
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.lessons-grid, .homeworks-grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+section {
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+background-color: rgb(13, 69, 69);
+color: white;
+padding: 16px 24px;
+margin: 12px 0px;
+font-size: 18px;
+border-radius: 5px;
+width: 160px;
+height: 50px;
+}
+
+section:hover{
+  background-color: rgb(25, 96, 96);
+  cursor: pointer;
+}
+
+
