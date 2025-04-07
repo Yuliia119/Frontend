@@ -1,0 +1,10 @@
+/* подключение скачанного шрифта из файла */
+@font-face {
+    font-family: 'Fugaz One';
+    src: url('../fonts/FugazOne-Regular.ttf') format('truetype');
+  }
+  
+  /* использование этого шрифта */
+  * {
+    font-family: 'Fugaz One', 'sans-serif';
+  }
