@@ -2,16 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace
 }
 body{
     background-color: beige;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .coordinats{
-    background-color: rgb(55, 211, 211);
-    border: 5px dashed red;
+    background-color: rgb(88, 211, 227);
+    border: 5px;
+    width: 600px;
+   margin: 10px; 
+}
 
-
+img{
+    margin: 10px;
 }
 
 .loader {

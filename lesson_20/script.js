@@ -30,13 +30,18 @@ async function getWeather(latitude, longitude, city) {
       case 1: return "Mainly clear";
       case 2: return "Partly cloudy";
       case 3: return "Overcast";
+      case 44: return "Fog";
+      case 48: return "Depositing rime fog";
+      case 51: return "Light";
+      case 53: return "Moderate";
+      case 55: return "Dense intensity";
       
       }
     }
     
-    document.getElementById("temperature").textContent = `температура =${temperature} ${currentWeatherUnits.temperature}`
-    document.getElementById("windspeed").textContent = `скорость ветра =${windspeed} ${currentWeatherUnits.windspeed}`
-    document.getElementById("weathercode").textContent = `погода =${weatherStyle(weathercode)}`
+    document.getElementById("temperature").textContent = `температура = ${temperature} ${currentWeatherUnits.temperature}`
+    document.getElementById("windspeed").textContent = `скорость ветра = ${windspeed} ${currentWeatherUnits.windspeed}`
+    document.getElementById("weathercode").textContent = `погода = ${weatherStyle(weathercode)}`
     loader.classList.toggle('hide')
     
 }
